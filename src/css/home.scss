@@ -1,0 +1,184 @@
+section.home
+{
+    height: 100vh;
+    background: url("../img/image-hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container
+    {
+        max-width: 85%;
+        margin: 0 auto;
+
+        header
+        {
+            height: 200px;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            img.close
+            {
+                display: none;
+                cursor: pointer;
+            }
+
+            img.hamburger
+            {
+                display: none;
+                cursor: pointer;
+            }
+
+            nav
+            {
+                ul.home_links
+                {
+                    li
+                    {
+                        display: inline-block;
+                        list-style: none;
+                        padding-left: 2.25rem;
+
+                        a
+                        {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .title
+        {
+            max-width: 55%;
+            border: 2px solid #fff;
+            padding: 2rem;
+            margin-top: 6rem;
+            
+            h1
+            {
+                text-align: left;
+                font-size: 6rem;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) 
+{
+    section.home
+    {   
+        .container
+        {
+            .title
+            {
+                max-width: 40%;
+                
+                h1
+                {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 930px) 
+{
+    section.home
+    {
+        .title
+        {
+            max-width: 70% !important;
+        }
+
+        header
+        {
+            img.hamburger
+            {
+                display: block !important;
+            }
+
+            nav
+            {
+                display: none !important;
+            }
+        }
+
+        .show
+        {
+            background: black !important;
+            height: 100vh;
+            width: 100%;
+            padding: 5.25rem 2.25rem;
+
+            header
+            {
+                position: relative;
+
+                img.close
+                {
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+            
+            img.hamburger
+            {
+                display: none !important;
+            }
+
+            img.close
+            {
+                display: block;
+            }
+
+            nav
+            {
+                position: absolute !important;
+                top: 180px !important;
+                display: block !important;
+
+                ul
+                {
+                    li
+                    {
+                        padding-bottom: 2rem;
+
+                        a
+                        {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 2rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 545px)
+{
+    section.home
+    {
+        background: url("../imgMobile/image-hero.jpg") no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .title
+        {
+            max-width: 90% !important;
+            margin: 0 auto;
+        }
+    }
+} 

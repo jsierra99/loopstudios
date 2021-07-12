@@ -1,0 +1,101 @@
+section.footer {
+  background: black;
+  padding: 2rem 0;
+}
+
+section.footer .container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+section.footer .container .flex_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+section.footer .container .flex_top img.logo {
+  width: 10%;
+}
+
+section.footer .container .flex_top .social_media {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+section.footer .container .flex_top .social_media img {
+  cursor: pointer;
+}
+
+section.footer .container .flex_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.footer .container .flex_bottom .social_media_mobile {
+  display: none;
+}
+
+section.footer .container .flex_bottom ul.footer_links li {
+  display: inline-block;
+  color: #fff;
+  margin-right: 2rem;
+  font-size: .9rem;
+  opacity: .9;
+}
+
+section.footer .container .flex_bottom p {
+  color: #707070;
+}
+
+@media only screen and (max-width: 830px) {
+  section.footer .flex_top {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  section.footer .flex_top .social_media {
+    display: none !important;
+  }
+  section.footer .flex_top img.logo {
+    width: 35% !important;
+    display: block;
+    margin: 0 auto 3rem auto;
+    cursor: pointer;
+  }
+  section.footer .flex_bottom {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  section.footer .flex_bottom .social_media_mobile {
+    display: block !important;
+    margin: 3rem 0 1.5rem 1rem;
+  }
+  section.footer .flex_bottom .social_media_mobile img {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  section.footer .flex_bottom li {
+    display: block !important;
+    margin: 0 0 2rem 0 !important;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

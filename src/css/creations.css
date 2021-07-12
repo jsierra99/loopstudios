@@ -1,0 +1,121 @@
+section.creations {
+  background: #fff;
+  padding-bottom: 12rem;
+}
+
+section.creations .container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+section.creations .container .flex_creations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+section.creations .container .flex_creations h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+section.creations .container .flex_creations button {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1.5px solid black;
+  padding: .5rem 1.75rem;
+  font-size: .75rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+section.creations .container .grid_creations {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+section.creations .container .grid_creations .creations1 {
+  position: relative;
+  background: black;
+}
+
+section.creations .container .grid_creations .creations1 img {
+  width: 100%;
+  opacity: .8;
+  height: 100%;
+}
+
+section.creations .container .grid_creations .creations1 p {
+  position: absolute;
+  bottom: 8%;
+  left: 15%;
+  z-index: 9;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+section.creations .container .grid_creations_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  section.creations .container {
+    position: relative;
+  }
+  section.creations .container .flex_creations {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  section.creations .container button {
+    position: absolute;
+    bottom: -4%;
+  }
+  section.creations .container .grid_creations {
+    display: none;
+  }
+  section.creations .container .grid_creations_mobile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  section.creations .container .grid_creations_mobile .creations1 {
+    position: relative;
+    background: black;
+  }
+  section.creations .container .grid_creations_mobile .creations1 img {
+    width: 100%;
+    opacity: .8;
+    height: 100%;
+  }
+  section.creations .container .grid_creations_mobile .creations1 p {
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    z-index: 9;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+/*# sourceMappingURL=creations.css.map */

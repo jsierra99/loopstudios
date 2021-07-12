@@ -1,0 +1,117 @@
+section.footer
+{
+    background: black;
+    padding: 2rem 0 ;
+
+    .container
+    {
+        max-width: 85%;
+        margin: 0 auto;
+
+        .flex_top
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            img.logo
+            {
+                width: 10%;
+            }
+
+            .social_media
+            {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+
+                img
+                {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .flex_bottom
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .social_media_mobile
+            {
+                display: none;
+            }
+
+            ul.footer_links
+            {
+                li
+                {
+                    display: inline-block;
+                    color: #fff;
+                    margin-right: 2rem;
+                    font-size: .9rem;
+                    opacity: .9;
+                }
+            }
+
+            p
+            {
+                color: #707070;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) 
+{
+    section.footer
+    {
+        .flex_top
+        {
+            display: block !important;
+            margin: 0 auto !important;
+
+            .social_media
+            {
+                
+                display: none !important;
+            }
+            
+            img.logo
+            {
+                width: 35% !important;
+                display: block;
+                margin: 0 auto 3rem auto;
+                cursor: pointer;
+            }
+        }
+
+        .flex_bottom
+        {
+            display: block !important;
+            margin: 0 auto;
+            text-align: center;
+
+            .social_media_mobile
+            {
+                display: block !important;
+                margin: 3rem 0 1.5rem 1rem;
+                
+                img
+                {
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            li
+            {
+                display: block !important;
+                margin: 0 0 2rem 0!important;
+                cursor: pointer;
+            }
+        }
+    }
+}
