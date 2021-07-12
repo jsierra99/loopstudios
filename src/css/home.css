@@ -124,7 +124,7 @@ section.home .container .title h1 {
     background-size: cover;
   }
   section.home .title {
-    max-width: 90% !important;
+    max-width: 100% !important;
     margin: 0 auto;
   }
 }
